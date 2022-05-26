@@ -16,6 +16,13 @@ namespace Player {
             
             CalculateMovement();
             CalculateShoot();
+            Jump();
+        }
+        
+        private void Jump() {
+            if (Input.GetKeyDown(KeyCode.J)) {
+                animationController.Jump();
+            }
         }
 
         private void CalculateMovement() {
