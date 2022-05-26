@@ -20,7 +20,7 @@ namespace Player {
         }
         
         private void Jump() {
-            if (Input.GetKeyDown(KeyCode.J)) {
+            if (Input.GetKeyDown(KeyCode.UpArrow)) {
                 animationController.Jump();
             }
         }
