@@ -21,6 +21,7 @@ namespace Player {
         
         private void Jump() {
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
+                rigidbody2D.AddForce(Vector2.up * 20f, ForceMode2D.Impulse);
                 animationController.Jump();
             }
         }
